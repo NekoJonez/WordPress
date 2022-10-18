@@ -424,7 +424,7 @@ function wp_login_viewport_meta() {
 	<?php
 }
 
-/*
+/**
  * Main part: check the request and redirect or display a form based on the current action.
  */
 
@@ -534,7 +534,7 @@ $login_link_separator = apply_filters( 'login_link_separator', ' | ' );
 switch ( $action ) {
 
 	case 'confirm_admin_email':
-		/*
+		/**
 		 * Note that `is_user_logged_in()` will return false immediately after logging in
 		 * as the current user is not set, see wp-includes/pluggable.php.
 		 * However this action runs on a redirect after logging in.
